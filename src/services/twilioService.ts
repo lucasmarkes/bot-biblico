@@ -12,7 +12,6 @@ export const sendWhatsAppMessage = async (to: string, message: string) => {
       from: process.env.TWILIO_WHATSAPP_NUMBER,
       to: to,
     })
-      .then((message) => console.log(message));
   } catch (error) {
     console.error("Erro ao enviar mensagem:", error);
   }
